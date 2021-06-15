@@ -1,0 +1,603 @@
+/* Color scheme sourced from http://khroma.co/generator/ */
+:root {
+    --riverbed: #4b5463;
+    --shadowgreen: #9cc2b8;
+    --pearlbush: #ece8dd;
+    --sweetcorn: #fae887;
+}
+
+body {
+    /* font-family, size, line-height, background color and font color for webpage */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17.5px;
+    line-height: 1.5;
+    color: var(--riverbed);
+    background-color: var(--pearlbush);
+}
+
+/* setting default header styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 6.25px;
+    color: var(--riverbed);
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 100px;
+    font-family: 'Brush Script MT';
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+h4 {
+    font-size: 30px;
+    color: var(--shadowgreen);
+    background-color: var(--riverbed);
+}
+
+h5 {
+    font-size: 25px;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+/* header span width of page set to flex in column
+to stack banner image over nav bar, profile pic, 
+name and expertise headings */
+header {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* main spans width of page */
+main {
+    width: 100%;
+    margin: 0px auto;
+}
+
+/* make footer a dark color with light font and align footer elements in center. */
+footer {
+    text-align: center;
+    background-color: var(--riverbed);
+    color: var(--shadowgreen);
+}
+
+/* banner image for header, set height for large screens.
+adjust image position for viewing */
+.background-img {
+    width: 100%;
+    height: 300px;
+    background-image: url(../Images/background-img.jpg);
+    background-size: cover;
+    background-position-y: 39%;
+}
+
+/* make profile pic and navigation bar on same line */
+.nav-bar-pic {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+
+/* make nav bar align on the left and set
+to take up more space than profile pic on the row */
+.nav-bar {
+    text-align: left
+    flex: 2 1 65%;
+}
+
+/* set flex value for profile pic */
+.profile-pic {
+    flex: 1 0 35%;
+}
+
+/* set size of profile picture, give a cirlce appearance
+and set to appear overlapping with banner picture */
+.profile-pic img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    position: relative;
+    top: -100px;
+    left: 20%;
+}
+
+/* allow navigation links to sit inline */
+.nav-bar ul {
+    display: flex;
+    flex-direction: row;
+}
+
+/* restyle nav links from default and set each to same flex value */
+.nav-bar li {
+    margin: 12px 0px 12px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    flex: 1;
+}
+
+/* removing underline and default color to links */
+.nav-bar li a:link {
+    text-decoration: none;
+    color: var(--riverbed);
+}
+
+/* makes links go bold when hovering over  */
+.nav-bar li a:hover {
+    font-weight: 550;
+}
+
+/* keep links as same color after visiting instead of default recolor */
+.nav-bar li a:visited {
+    color: var(--riverbed);
+}
+
+/* buffer some space from left for first nav link */
+.nav-bar #about {
+    margin-left: 50px;
+}
+
+/* spacing out the other nav links */
+.nav-bar #work,
+.nav-bar #contact {
+    margin-left: 150px;
+}
+
+/* shift name and expertise bar up the page to 
+adjust for profile picture being shifted up */
+.name, .expertise-bar {
+    position: relative;
+    top: -130px;
+}
+
+/* show list of expertise in a row under name with spacing between name and expertise */
+.expertise-bar .my-expertise {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-top: 12x;
+}
+
+/* make font size smaller for expertises and align center with spacing */
+.expertise-bar .my-expertise li h2 {
+    margin: 10px 0px 10px 0px;
+    align-items: center;
+    font-size: 24px;
+}
+
+/* set flex value for first expertise and align to the right to more closely group expertise */
+#geologist {
+    flex: 3.25;
+    text-align: right;
+}
+
+/* set flex for middle-listed exterise smaller and add right/left borders to give separation marks */
+#fsf {
+    flex: 1.5;
+    margin-right: 36px;
+    margin-left: 36px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+/* set flex value for 3rd expertise and align to the left to move closer to other expertises */
+#marketer {
+    flex: 3.25;
+    text-align: left;
+}
+
+/* flex section container to allow aside and section boxes to sit in a row */
+.section-container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* close gap between header and about me section that was created by shifting
+the profile picture and name/expertise up the page */
+.section-box {
+    position: relative;
+    top: -100px;
+}
+
+/* make about me and work sections take up 7/8 of page width and make child elements stack in columns */
+#about-me-section-box,
+#work-section-box {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+}
+
+/* make asides take up 1/7 of page width,
+and text sits vertically along section with adjusted positioning
+and dark background, light font, rounded corners  */
+#about-me-aside h3,
+#work-aside h3 {
+    transform: rotate(-90deg);
+    flex: 1;
+    text-align: center;
+    position: relative;
+    top: 40%;
+    right: 15%;
+    background-color: var(--riverbed);
+    color: var(--pearlbush);
+    border-radius: 10px;
+    letter-spacing: 5px;
+    padding: 12px;
+}
+
+/* set picture section of about me to larger than paragraphs
+and allow images to sit in rows */
+.about-me-top {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+}
+
+/* set paragraph in about me to smaller than pictures */
+.about-me-footer {
+    flex: 1;
+}
+
+/* each of 3 picture sections sit 3-across in a row, evenly.
+allow pictures inside each section to align in a row and wrap */
+.about-me-card  {
+    flex: 0 0 33.333%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* allow header of each picture section to flex in rows and center */
+.about-me-subsection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* place each picture section header in middle of the section
+and give a light gradient background and bolder text */
+.about-me-subsection h3 {
+    position: relative;
+    top: 50%;
+    padding: 16px;
+    background-image: linear-gradient(
+        rgba(236, 232, 221, 0.9),
+        rgba(236, 232, 221, 0.6)
+    );
+    font-weight: 600;
+}
+
+/* allow images to wrap in rows in about me sections */
+.about-me-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* pictures sit 2x2 in largest view,
+can flex down to 4 pictures in a column per picture section.
+make picture sizes uniform */
+.about-me-content img {
+    flex: 2 1 50%;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 150px;
+    padding: 5px;
+}
+
+/* add spacing between about me paragraphs and images
+and align center */
+.about-me-footer p {
+    margin: 16px 0px 16px 0px;
+    text-align: center;
+}
+
+/* first portfolio item take up entire row,
+appearing larger than other portfolio items.
+give a border */
+.first-work-card img {
+    flex: 1;
+    width: 100%;
+    border: solid 5px var(--riverbed);
+}
+
+/* rest of portfolio items are smaller than the first
+and appear as a row below the first */
+.work-cards {
+    flex: .5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start ;
+}
+
+/* the second row of portfolio items flex to 3 items in a row
+with the ability to wrap on resize. set to relative positioning
+to allow titles to be absolute positioning */
+.work-card {
+    flex: 0 0 33.333%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    position: relative;
+    
+}
+
+/* uniform size of 2nd row of portfolio items and give a border */
+.work-card img {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: solid 5px var(--riverbed);
+}
+
+/* give the portfolio titles absolute positions and style */
+.work-card h3 {
+    color: var(--riverbed);
+    text-align: left;
+    position: absolute;
+    left: 10px;
+    bottom: 50px;
+    background-image: linear-gradient(
+        rgba(236, 232, 221, 0.9),
+        rgba(236, 232, 221, 0.6)
+    );
+}
+
+/* position title of first portfolio item and style */
+.first-work-card h3 {
+    color: var(--riverbed);
+    text-align: left;
+    position: relative;
+    top: 75%;
+    left: 10px;
+    background-image: linear-gradient(
+        rgba(236, 232, 221, 0.9),
+        rgba(236, 232, 221, 0.6)
+    );
+}
+
+/* each portfolio item gets a shadow upon hovering over */
+.work-cards a:hover img,
+.first-work-card a:hover img {
+    box-shadow: inset 0px 0px 8px var(--riverbed), 0 0 15px var(--riverbed);
+}
+
+/* align contents centered in footer and add spacing  */
+footer #get-in-touch {
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 24px;
+}
+
+/* contact links to sit in a row and centered */
+#contact-links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* each link spaced evenly in one line in largest view */
+#contact-links li {
+    flex: 1;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+/* style static links to remove underline and default color */
+#contact-links li a:link {
+    color: var(--shadowgreen);
+    text-decoration: none;
+}
+
+/* keep links same color after a click */
+#contact-links li a:visited {
+    color: var(--shadowgreen);
+}
+
+/* links get bolder upon hover */
+#contact-links li a:hover {
+    color: var(--shadowgreen);
+    font-weight: 550;
+}
+
+/* settings for a tablet */
+@media screen and (max-width: 992px) {
+    /* header height gets smaller */
+    header .background-img {
+        height: 275px;
+    }
+
+    /* change spacing between nav links */
+    .nav-bar #about,
+    .nav-bar #work,
+    .nav-bar #contact {
+        margin: 4px 24px 4px 24px;
+    }
+
+    /* make profile picture smaller */
+    .profile-pic {
+        width: 75px;
+    }
+
+    /* adjust about me and work sections up a little more */
+    .section-box {
+        position: relative;
+        top: -150px;
+    }
+
+    /* allow portfolio items to stack in columns */
+    #work-section-box {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .first-work-card {
+        flex: 1;
+    }
+
+    /* max 2 portfolio items next to each other */
+    .work-cards {
+        flex-wrap: wrap;
+        flex-grow: 2;
+        justify-content: center;
+    }
+
+    /* give more top margin as portfolio items stack */
+    .work-card {
+        margin-top: 16px;
+    }
+}
+
+/* settings for a mobile device */
+@media screen and (max-width: 768px) {
+    
+    /* banner image gets smaller */
+    header .background-img {
+        height: 200px;
+    }
+
+    /* nav bar links stack on top each other */
+    .nav-bar-pic {
+        flex-direction: column;
+    }
+    
+    /* nav bar links stack on top each other and span page width */
+    .nav-bar ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 100%;
+    }
+
+    /* spacing for each link */
+    .nav-bar #about,
+    .nav-bar #work,
+    .nav-bar #contact {
+        margin: 4px 0px 4px 0px;
+    }
+
+    /* remove profile picture */
+    .profile-pic {
+        display: none;
+    }
+
+    /* remove adjustment of name and expertise bar upwards
+    now that white space is filled with stacked nav bar */
+    .name, .expertise-bar, .section-box {
+        position: relative;
+        top: 0px;
+    }
+
+    /* adjust font size and padding around expertises */
+    .expertise-bar .my-expertise li h2 {
+        font-size: 16px;
+        padding-bottom: 24px;
+    }
+
+    /* remove border lines and each spaced evenly */
+    #geologist,
+    #fsf,
+    #marketer {
+        flex: 1;
+        border: none;
+    }
+
+    /* put about me and work contents to be in columns */
+    .section-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /* move asides to top of each section and remove transform */
+    #about-me-aside h3,
+    #work-aside h3 {
+        transform: none;
+        position: relative;
+        right: 0%;
+        top: 0%;
+        padding: 8px 0px 8px 0px;
+        flex: 1;
+    }
+
+    /* portfolio items stack in column */
+    #work-section-box,
+    .work-cards {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .first-work-card,
+    .work-cards .work-card {
+        flex: 1;
+    }
+
+    /* reposition title of first portfolio item */
+    .first-work-card h3 {
+        position: absolute;
+        top: 75%;
+        left: 10px;
+        display: none;
+    }
+
+    /* center items in column */
+    .work-cards {
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* make footer smaller */
+    footer #get-in-touch {
+        padding: 10px;
+        margin-bottom: 0px;
+    }
+
+    /* change font size of footer to smaller */
+    footer #get-in-touch h4 {
+        font-size: 16px;
+    }
+
+    /* stack links to 3 per row */
+    #contact-links li {
+        flex: 0 0 33.333%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 12px;
+        font-size: 12px;
+    }
+        
+}
+
+
+
+
+
+
+
+
+
