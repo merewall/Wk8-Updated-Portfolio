@@ -369,7 +369,7 @@ to allow titles to be absolute positioning */
 }
 
 /* position title of first portfolio item and style */
-.first-work-card h3 {
+#first-work-header {
     color: var(--riverbed);
     text-align: left;
     position: relative;
@@ -379,6 +379,10 @@ to allow titles to be absolute positioning */
         rgba(236, 232, 221, 0.9),
         rgba(236, 232, 221, 0.6)
     );
+}
+
+.first-work-card a {
+    text-decoration: none;
 }
 
 /* each portfolio item gets a shadow upon hovering over */
@@ -558,7 +562,7 @@ footer #get-in-touch {
     }
 
     /* reposition title of first portfolio item */
-    .first-work-card h3 {
+    #first-work-header {
         position: absolute;
         top: 75%;
         left: 10px;
