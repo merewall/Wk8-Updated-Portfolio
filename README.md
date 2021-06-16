@@ -11,7 +11,7 @@ Updating my professinoal web development portfolio, GitHub, Resume, and LinkedIn
 * Include a link to a downloadable PDF of resume.
 * Display at least 2 examples of student work.
 * Each project or work should include a title, deployed link, link to the GitHub repo, and screenshot of the deployed application.
-* Have a polished, mobile-responsive user interface, and mobile-first design.
+* Have a polished, mobile-responsive user interface.
 ###### Updated GitHub Acceptance Criteria
 
 * A profile picture or avatar
