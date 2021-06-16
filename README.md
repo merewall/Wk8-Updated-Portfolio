@@ -60,7 +60,7 @@ Updating my professinoal web development portfolio, GitHub, Resume, and LinkedIn
 ## Mock-Up
 The following image shows the web application's appearance and functionality:
 
-![Screenshot of Professional Portfolio](https://github.com/merewall/Wk8-Updated-Portfolio/blob/main/Assets/Images/portfolio-screenshot.png) 
+![Screenshot of Professional Portfolio](https://github.com/merewall/Wk8-Updated-Portfolio/blob/main/Assets/Images/portfolio-screenshot.PNG) 
 
 ## Deployed Application Links
 
