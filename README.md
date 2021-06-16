@@ -62,6 +62,8 @@ The following image shows the web application's appearance and functionality:
 
 ![Screenshot of Professional Portfolio](https://github.com/merewall/Wk8-Updated-Portfolio/blob/main/Assets/Images/portfolio-screenshot.PNG) 
 
+![Gif demo of Professional Portfolio](https://github.com/merewall/Wk8-Updated-Portfolio/blob/main/Assets/Images/portfolio-demo.gif)
+
 ## Deployed Application Links
 
 The deployed GitHub page for this web application can be found: 
