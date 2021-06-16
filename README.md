@@ -55,7 +55,7 @@ Updating my professinoal web development portfolio, GitHub, Resume, and LinkedIn
 * HTML 5
 * CSS
 * [Google Fonts](https://fonts.google.com/)
-* [Coolors](https://coolors.co/*/)
+* [Khroma](http://khroma.co/generator/)
 
 ## Mock-Up
 The following image shows the web application's appearance and functionality:
